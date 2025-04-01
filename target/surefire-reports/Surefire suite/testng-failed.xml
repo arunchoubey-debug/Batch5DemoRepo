@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="test.LoginTest">
+        <methods>
+          <include name="verifyLoggingIntoApplicationUsingValidCredentials" invocation-numbers="4"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- test.LoginTest -->
+      <class name="test.RegisterTest">
+        <methods>
+          <include name="verifyRegisteringAccountUsingAllFields"/>
+          <include name="teardown"/>
+          <include name="verifyRegisteringAccountbySelectingYesNewsLetter"/>
+          <include name="verifyRegisteringAccountbySelectingNoNewsLetter"/>
+          <include name="setup"/>
+          <include name="verifyRegisteringUsingMandatoryFields"/>
+        </methods>
+      </class> <!-- test.RegisterTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
